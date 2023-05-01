@@ -7,7 +7,7 @@
  .fixedBg{
   top: 0;
   position: absolute;
-  background: url("../public/hero_bg.jpeg") center center/cover no-repeat;
+  background: url("/hero_bg.jpeg") center center/cover no-repeat;
   width: 100%;
   height: 100vh;
   opacity: 0.7;
