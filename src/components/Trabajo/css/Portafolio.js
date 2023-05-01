@@ -7,14 +7,14 @@ export const PortafolioContainer = styled.section`
   margin: auto;
   display: grid;
   grid-template-columns: minmax(600px, 700px) 1fr;
-  place-content: center;
+ place-content: center;
   column-gap: 20px;
   //**Responsive  */
   @media screen and (max-width: 1293px) {
     grid-template-columns:1fr;
     max-width: 900px;
     row-gap: 20px;
-    place-content: none;
+    place-content: start;
   }
 `;
 

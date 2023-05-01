@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const GridImg = styled.div`
   justify-self: end;
   align-self: end;
-
   .grid {
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -14,6 +13,11 @@ export const GridImg = styled.div`
   .mantine-1jkjqkp[data-active] {
     background: greenyellow;
   }
+   //**Responsive  */
+   @media screen and (max-width: 1293px){
+    justify-self: center;
+    align-self: start;
+   }
 `;
 
 export const FlexContent = styled.div`

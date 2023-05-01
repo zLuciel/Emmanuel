@@ -7,6 +7,7 @@ export const CardContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   max-width: 322px;
+  min-width: 260px;
   height: 55px;
   background: #0d1116;
   border: 1px solid #00000000;

@@ -2,16 +2,25 @@
 import styled from "styled-components";
 
 export const PortafolioContainer = styled.section`
-  padding: 0px 20px 50px 20px;
+  padding: 0px 20px 0px 20px;
   max-width: 1400px;
   margin: auto;
   display: grid;
   grid-template-columns: minmax(600px, 700px) 1fr;
   place-content: center;
   column-gap: 20px;
+    //**Responsive  */
+    @media screen and (max-width: 1293px) {
+    grid-template-columns:1fr;
+    grid-template-rows: max-content 1fr;
+    max-width: 900px;
+    row-gap:20px;
+    place-content: start;
+  }
 `;
 
 export const PrincipalImg = styled.div`
+height: max-content;
   p {
     margin-bottom: 20px;
   }
@@ -22,7 +31,7 @@ export const PrincipalImg = styled.div`
     font-weight: 400;
     line-height: 77px;
   }
-  .img {
+ .img {
     border-radius: 5px;
     object-fit: cover;
     object-position: center;

@@ -93,7 +93,7 @@ const Portafolio = () => {
         {
           opacity: 0,
           width: 0,
-          height:379,
+          //height:379,
         },
         {
           opacity: 1,
@@ -125,8 +125,8 @@ const Portafolio = () => {
             src={image}
             alt="Descripción de mi imagen"
             layout="responsive"
-            width={691}
-            height={379}
+            //width={691}
+            //height={379}
           />
          </div>
           {/*<div className="title-img">

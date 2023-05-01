@@ -5,6 +5,10 @@ export const SkillContainer = styled.section`
   padding: 80px 20px;
   max-width: 1400px;
   margin: auto;
+  //**Responsive  */
+  @media screen and (max-width: 1293px){
+    max-width: 900px;
+  }
   & > p {
     margin-bottom: 20px;
     max-width: 700px;
@@ -18,7 +22,7 @@ export const SkillContainer = styled.section`
   }
   .grid{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(auto-fill, minmax(260px,  1fr));
     gap: 25px;
   }
 `;

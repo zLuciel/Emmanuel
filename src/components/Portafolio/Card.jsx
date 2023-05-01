@@ -33,7 +33,7 @@ const Card = ({ setImage,cardivRef }) => {
   return (
     <GridImg>
       <Carousel 
-        maw={600}
+        maw={560}
         align="center"
         mx="auto"
         height={420}
