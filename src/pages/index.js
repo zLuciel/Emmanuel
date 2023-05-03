@@ -9,15 +9,18 @@ import About from "@/components/About/About";
 import { Certificado } from "@/components/Certificado/Certificado";
 import Trabajo from "@/components/Trabajo/Trabajo";
 import Skill from "@/components/Skill/Skill";
-
+import Footer from "@/components/Footer/Footer";
+import Image from "next/legacy/image";
+import Emmanuel from "@/assets/emmanuelAbregu.jpg";
 //const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
       <div className={`${styles.fixedBg}`}>
-        <span>Emmanuel Abregú</span>{" "}
+        {/*<span>Emmanuel Abregú</span>{" "}*/}
       </div>
+      {<span className={`${styles.contentimg}`}>Emmanuel Abregú</span>}
       <Head>
         <title>Emmanuel Abregú</title>
         <meta name="description" content="Desarrollador full stack" />
@@ -25,13 +28,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main >
-       <Presentacion />
-        
+      <main>
+        <Presentacion />
+       <div className={`${styles.containerbg2}`}>
+        <div className={`${styles.bg2}`}>
+        </div>
+       <Portafolio />
         <About />
         <Trabajo />
-        <Skill/><Portafolio />
+        <Skill />
+       </div>
       </main>
+      <Footer />
     </>
   );
 }

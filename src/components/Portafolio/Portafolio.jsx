@@ -110,8 +110,8 @@ const Portafolio = () => {
     <PortafolioContainer ref={containerRefx}>
       <PrincipalImg>
         <Title
-        titleRef={titleRefxs}
-        descriptionRef={descriptionRefx}
+        //titleRef={titleRefxs}
+        //descriptionRef={descriptionRefx}
           parrafo="This is the main factor that sets us apart from our competition and
         allows us to deliver a specialist business consultancy service. Our team
         applies its wide-ranging experience to"

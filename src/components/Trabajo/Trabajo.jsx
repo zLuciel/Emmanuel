@@ -3,7 +3,7 @@ import { PrincipalImg, PortafolioContainer } from "./css/Portafolio";
 import Image from "next/legacy/image";
 import Card from "./Card";
 import Title from "../Title/Title";
-import Paisaje from "@/assets/diosa.jpg"
+import Paisaje from "@/assets/emmanuelAbregu.jpg"
 const Trabajo = () => {
   return (
     <PortafolioContainer>

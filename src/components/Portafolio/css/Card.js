@@ -36,6 +36,6 @@ export const FlexContent = styled.div`
     border-radius: 5px;
     object-fit: cover;
     object-position: center;
-    filter: drop-shadow(-8px 8px 10px #000000);
+    //filter: drop-shadow(-8px 8px 10px #000000);
   }
 `;
