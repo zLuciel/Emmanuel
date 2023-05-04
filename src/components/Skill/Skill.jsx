@@ -68,8 +68,8 @@ const Skill = () => {
          its wide-ranging experience to"
         title={"Skill And Aptitudes"}
       />
-      <button>Skill</button>
-      <button>Aptitud</button>
+      {/*<button>Skill</button>
+      <button>Aptitud</button>*/}
       <div className="grid" ref={CardRefChildre} >
         {Habilidades.map((skill, i) => (
           <Card

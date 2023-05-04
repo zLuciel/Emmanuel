@@ -2,10 +2,9 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { gsap } from 'gsap';
 //import Emmanuel from "@/assets/emmanuelAbregu.jpg";
-import { CardSectionContainer, Imagen, Nombre, PresentacionGrid, RedSocial } from "./css/Presentacion";
+import { CardSectionContainer, Nombre, PresentacionGrid } from "./css/Presentacion";
 import SectionCard from "./SectionCard";
-import { AiFillGithub} from 'react-icons/ai';
-import {FaLinkedinIn,FaInstagram } from 'react-icons/fa';
+import Redes from "../Redes/Redes";
 
 const Presentacion = () => {
   gsap.registerPlugin();
@@ -47,12 +46,7 @@ const Presentacion = () => {
           que me hacen destacar del resto. Ademas, de la programación tengo
           conocimientos en el area de diseño web.
         </p>
-        <RedSocial >
-          <a href=""><AiFillGithub/></a>
-          <a href=""><FaLinkedinIn/> </a>
-          <a href=""><FaInstagram/></a>
-          <a href="">ds</a>
-        </RedSocial>
+        <Redes/>
       </Nombre>
       {<CardSectionContainer >
        <SectionCard/>

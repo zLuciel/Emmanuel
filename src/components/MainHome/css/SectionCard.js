@@ -18,17 +18,6 @@ export const CardSectionMain = styled.section`
   gap: 50px;
   overflow: hidden;
   .absolute{
-   /* background-image: url("./svg_section.svg");
-    background-position: 100% 100%;
-    background-repeat: no-repeat;
-    border-radius: inherit;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-    font-size: 20rem;*/
     background-image: url("./svg_section.svg");
     background-position: 100% 100%;
     background-repeat: no-repeat;
@@ -48,8 +37,8 @@ export const Column1 = styled.div`
     color: var(--primary-color);
     font-style: normal;
     font-weight: 400;
-    font-size: 96px;
-    line-height: 100px;
+    font-size: 5rem;
+    line-height: 85px;
   }
   p {
     max-width: 600px;

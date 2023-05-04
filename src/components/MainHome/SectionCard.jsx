@@ -42,14 +42,14 @@ const SectionCard = () => {
               <path
                 d="M3.00037 285C18.9467 220.939 89.8464 108.976 245.875 173.605C440.911 254.391 462.99 197.69 506.74 137.979C550.49 78.2669 587.289 21.5658 708.727 89.8078C805.877 144.401 820.896 54.6833 816.262 3"
                 stroke="#2222223b"
-                stroke-width="5"
-                stroke-linecap="round"
+                strokeWidth="5"
+                strokeLinecap="round"
               />
             </svg>
           </div>
         }
       <Column1 ref={colum1}>
-        <h1>Estadistica</h1>
+        <h1>Resultados</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quo
           autem dolor deserunt corrupti! Recusandae tempore cumque quas, tempora

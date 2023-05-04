@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 export const SkillContainer = styled.section`
-  padding: 80px 20px;
+  padding: 80px 30px;
   max-width: 1400px;
   margin: auto;
   //**Responsive  */

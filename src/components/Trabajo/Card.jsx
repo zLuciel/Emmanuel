@@ -23,16 +23,36 @@ const data = [
     parrafo: "Sed ut persepecticcion unde omns ste antus error",
     subtitle: 2023,
   },
+  {
+    title: "Gogle Wars",
+    parrafo: "Sed ut persepecticcion unde omns ste antus error",
+    subtitle: 2023,
+  },
+  {
+    title: "Gogle Wars",
+    parrafo: "Sed ut persepecticcion unde omns ste antus error",
+    subtitle: 2023,
+  },
+  {
+    title: "Gogle Wars",
+    parrafo: "Sed ut persepecticcion unde omns ste antus error",
+    subtitle: 2023,
+  },
+  {
+    title: "Gogle Wars",
+    parrafo: "Sed ut persepecticcion unde omns ste antus error",
+    subtitle: 2023,
+  },
 ];
 
 const Card = () => {
   return (
     <GridImg>
       <Carousel
-        maw={600}
+        //maw={600}
         align="center"
         mx="auto"
-        height={350}
+        height={"auto"}
         withIndicators
         withControls={false}
         slideGap="xl"

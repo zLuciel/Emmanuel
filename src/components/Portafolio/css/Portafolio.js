@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 export const PortafolioContainer = styled.section`
-  padding: 170px 20px 50px 20px;
+  padding: 0px 30px 50px 30px;
   max-width: 1400px;
   margin: auto;
   display: grid;

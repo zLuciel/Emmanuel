@@ -24,7 +24,7 @@ const data = [
   {
     title: "Gogle Wars",
     parrafo: "Sed ut persepecticcion unde omns ste antus error",
-    img: "https://pa1.narvii.com/7236/90682cd3d55536c756bc867cd20bd94acec1730fr1-800-450_hq.gif",
+    img: gamesapi,
   },
 ];
 

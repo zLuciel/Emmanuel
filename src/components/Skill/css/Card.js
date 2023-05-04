@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
   max-width: 322px;
   min-width: 260px;
   height: 55px;
-  background: #0d1116;
+  //background: #0d1116;
   border: 1px solid #00000000;
   box-shadow: rgb(0 0 0) -4px 4px 8px 1px;
     // rgb(0, 0, 0) 6px 6px 20px inset, #000000 -6px -6px 20px inset

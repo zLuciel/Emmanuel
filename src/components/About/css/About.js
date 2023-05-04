@@ -8,6 +8,7 @@ export const AboutContainer = styled.section`
   grid-template-columns: 1fr;
   place-content: center;
   padding: 50px 30px;
+  padding-top: 170px;
   h1 {
     color: var(--primary-color);
     font-size: var(--size-title-section);

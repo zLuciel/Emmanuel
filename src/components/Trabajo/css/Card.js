@@ -2,13 +2,11 @@
 import styled from "styled-components";
 
 export const GridImg = styled.div`
-    justify-self: center;
-    align-self: end;
   .grid {
+    padding: 30px 0;
     display: grid;
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(auto-fill, minmax(250px,  1fr));
     gap:  30px 50px;
-    place-content: center;
   }
   .mantine-1jkjqkp[data-active] {
     background: greenyellow;
@@ -19,6 +17,7 @@ export const FlexContent = styled.div`
   cursor: pointer;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
   gap: 5px;
   h1{
     font-size: 2rem;

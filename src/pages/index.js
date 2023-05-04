@@ -12,6 +12,7 @@ import Skill from "@/components/Skill/Skill";
 import Footer from "@/components/Footer/Footer";
 import Image from "next/legacy/image";
 import Emmanuel from "@/assets/emmanuelAbregu.jpg";
+import Form from "@/components/Form/Form";
 //const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -33,10 +34,11 @@ export default function Home() {
        <div className={`${styles.containerbg2}`}>
         <div className={`${styles.bg2}`}>
         </div>
-       <Portafolio />
         <About />
+        <Portafolio />
         <Trabajo />
         <Skill />
+        <Form/>
        </div>
       </main>
       <Footer />
