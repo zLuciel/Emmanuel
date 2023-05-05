@@ -6,7 +6,7 @@ export const CardContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 322px;
+  max-width: 280px;
   min-width: 260px;
   height: 55px;
   //background: #0d1116;
@@ -14,7 +14,9 @@ export const CardContainer = styled.div`
   box-shadow: rgb(0 0 0) -4px 4px 8px 1px;
     // rgb(0, 0, 0) 6px 6px 20px inset, #000000 -6px -6px 20px inset
   font-size: 1.8rem;
-
+  @media screen and (max-width: 579px){
+    max-width: none;
+  }
   .ico {
     display: flex;
     justify-content: center;

@@ -41,7 +41,7 @@ export default function Home() {
         <Form/>
        </div>
       </main>
-      <Footer />
+     {/* <Footer />*/}
     </>
   );
 }

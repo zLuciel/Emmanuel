@@ -4,6 +4,15 @@ export const ImgContainer = styled.div`
 position: relative;
 justify-self: end;
 align-self: center;
+width:623px;
+height:399px;
+//**Responsive  */
+@media screen and (max-width: 1293px){
+    justify-self: center;
+    width: 100%;
+    height: auto;
+
+}
 ::before{
  position: absolute;
  content: "";

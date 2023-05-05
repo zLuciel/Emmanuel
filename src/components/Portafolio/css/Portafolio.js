@@ -2,9 +2,10 @@
 import styled from "styled-components";
 
 export const PortafolioContainer = styled.section`
-  padding: 0px 30px 50px 30px;
+  padding: 0px 30px ;
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 80px;
   display: grid;
   grid-template-columns: minmax(600px, 700px) 1fr;
   place-content: center;
@@ -14,8 +15,15 @@ export const PortafolioContainer = styled.section`
     grid-template-columns:1fr;
     grid-template-rows: max-content 1fr;
     max-width: 900px;
-    row-gap:20px;
+    row-gap:50px;
     place-content: start;
+  }
+  @media screen and (max-width: 675px){
+    
+    grid-template-columns: minmax(400px, 700px);
+  }
+  @media screen and (max-width: 579px){
+    max-width: 500px;
   }
 `;
 

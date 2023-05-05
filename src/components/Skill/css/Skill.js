@@ -2,12 +2,16 @@
 import styled from "styled-components";
 
 export const SkillContainer = styled.section`
-  padding: 80px 30px;
+  padding: 0px 30px;
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 80px;
   //**Responsive  */
   @media screen and (max-width: 1293px){
     max-width: 900px;
+  }
+  @media screen and (max-width: 579px){
+    max-width: 500px;
   }
   & > p {
     margin-bottom: 20px;
@@ -22,7 +26,7 @@ export const SkillContainer = styled.section`
   }
   .grid{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px,  1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px,  1fr));
     gap: 25px;
   }
 `;

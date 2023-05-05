@@ -7,7 +7,8 @@ export const AboutContainer = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   place-content: center;
-  padding: 50px 30px;
+  padding: 50px 30px 0 ;
+  margin-bottom: 80px;
   padding-top: 170px;
   h1 {
     color: var(--primary-color);
@@ -17,8 +18,12 @@ export const AboutContainer = styled.section`
     line-height: 77px;
     margin-bottom: 20px;
   }
+  //**Responsive */
   @media screen and (max-width: 1293px) {
     max-width: 900px;
+  }
+  @media screen and (max-width: 579px){
+    max-width: 500px;
   }
 `;
 export const CardGrid = styled.div`

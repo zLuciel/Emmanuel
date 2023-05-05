@@ -49,8 +49,8 @@ const Card = () => {
   return (
     <GridImg>
       <Carousel
-        //maw={600}
-        align="center"
+       // maw={900}
+        align="start"
         mx="auto"
         height={"auto"}
         withIndicators

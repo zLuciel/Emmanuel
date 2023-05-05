@@ -8,6 +8,14 @@ export const ContainerForm = styled.section`
   display: grid;
   grid-template-columns: 641px 1fr;
   gap: 50px;
+   //**Responsive  */
+   @media screen and (max-width: 1293px){
+    max-width: 900px;
+    grid-template-columns: 1fr;
+  }
+  @media screen and (max-width: 579px){
+    max-width: 500px;
+  }
   & > div > p {
     margin-bottom: 20px;
     max-width: 700px;

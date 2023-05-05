@@ -4,9 +4,6 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  images: {
-    domains: ['i.pinimg.com', 'pa1.narvii.com', 'media.tenor.com', 'i.gifer.com'],
-  },
 };
 
 const withTM = require('next-transpile-modules')(['gsap']);

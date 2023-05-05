@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { Carousel } from "@mantine/carousel";
 import { FlexContent, GridImg } from "./css/Card";
 import gamesapi from "@/assets/gamesapi.png"
@@ -33,10 +33,10 @@ const Card = ({ setImage,cardivRef }) => {
   return (
     <GridImg>
       <Carousel 
-        maw={560}
+        //maw={560}
         align="center"
         mx="auto"
-        height={420}
+        //height={420}
         withIndicators
         withControls={false}
         slideGap="xl"
@@ -46,13 +46,17 @@ const Card = ({ setImage,cardivRef }) => {
             <FlexContent key={i} onMouseOver={() => setImage(card.img)}>
               <h4>{card.title}</h4>
               <p>{card.parrafo}</p>
+              
               <Image
                 className="img"
                 src={card.img}
                 alt={card.title}
                 width={257}//257
                 height={118}//118
+                layout="responsive"
+                objectFit="cover"
               />
+              
             </FlexContent>
           ))}
         </Carousel.Slide>
@@ -67,6 +71,8 @@ const Card = ({ setImage,cardivRef }) => {
                 alt={card.title}
                 width={257}
                 height={118}
+                layout="responsive"
+                objectFit="cover"
               />
             </FlexContent>
           ))}

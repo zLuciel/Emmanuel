@@ -12,7 +12,8 @@ const ImgForm = () => {
       alt='img'
       width={623}
       height={399}
-      objectFit='cover'  
+      objectFit='cover'
+      layout='responsive'  
       />
       <div className='absolRedes'>
         <Redes/>

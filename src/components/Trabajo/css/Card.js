@@ -28,9 +28,6 @@ export const FlexContent = styled.div`
     color: var(--primary-color);
     font-size: 2.2rem;
   }
-  p {
-    max-width: 200px;
-  }
   .img {
     border-radius: 5px;
     object-fit: cover;
