@@ -19,8 +19,7 @@ export const PortafolioContainer = styled.section`
     place-content: start;
   }
   @media screen and (max-width: 675px){
-    
-    grid-template-columns: minmax(400px, 700px);
+    grid-template-columns: minmax(1fr, 700px);
   }
   @media screen and (max-width: 579px){
     max-width: 500px;

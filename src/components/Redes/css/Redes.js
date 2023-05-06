@@ -9,10 +9,9 @@ export const RedSocial = styled.div`
   padding: 10px 0;
   a {
     display: flex;
-    font-size: 2rem;
-    transform: all 0.8s ease-out;
+    font-size: 2.5rem;
+    transition: all 0.3s ease-in-out;
     :hover {
-      transform: all 0.8s ease-out;
       color: var(--primary-color);
       transform: scale(1.2);
     }
