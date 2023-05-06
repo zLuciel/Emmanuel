@@ -11,6 +11,10 @@ padding: 0 20px;
   place-content: center;
   height: calc(100vh - 77px);
   gap: 20px 56px;
+  //**Responsive */
+  @media screen and (max-width: 875px){
+    min-height: 100vh ;
+  }
 `;
 export const Nombre = styled.div`
   grid-area: Presentacion;

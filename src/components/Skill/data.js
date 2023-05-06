@@ -10,6 +10,7 @@ import {
   SiPostgresql,
   SiFirebase,
   SiNodedotjs,
+  SiFigma,
 } from "react-icons/si";
 
 const Habilidades = [
@@ -22,16 +23,19 @@ const Habilidades = [
       name: "Mongodb",
       icon: <DiMongodb />,
       color: "#4DB33D",
+      info:"NoSQL Db management",
     },
     {
       name: "Redux",
       icon: <SiRedux />,
       color: "#8100f1",
+      info:"Status Management",
     },
     {
       name: "Html",
       icon: <SiHtml5 />,
       color: "#f06529",
+      info:"Hypertext Markup Language",
     },
     {
       name: "Css",
@@ -42,36 +46,43 @@ const Habilidades = [
       name: "Javascript",
       icon: <SiJavascript />,
       color: "#f0db4f",
+      info:"DOM Selectors, API requests",
     },
     {
       name: "Styled Component",
       icon: <SiStyledcomponents />,
       color: "#f627bb",
+      info:"Create Styles In React",
     },
     {
       name: "Next 13",
       icon: <SiNextdotjs />,
       color: "#ffffff",
+      info:"Scalable Web Applications",
     },
     {
       name: "Postgresql",
       icon: <SiPostgresql />,
       color: "#0059ff",
+      info:"Relational Db Management"
     },
     {
       name: "Firebase",
       icon: <SiFirebase />,
       color: "#ffc400",
+      info:"Realtime Database, Storage"
     },
     {
       name: "Express",
       icon: <SiNodedotjs />,
       color: "#01a51a",
+      info:"Fast And Flexible Server",
     },
     {
-      name: "Firebase",
-      icon: <SiFirebase />,
-      color: "#ffc400",
+      name: "Figma",
+      icon: <SiFigma />,
+      color: "yellow",
+      info:"User Interface Design",
     },
   ];
 

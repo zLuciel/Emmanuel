@@ -43,6 +43,7 @@ height: max-content;
     border-radius: 5px;
     object-fit: cover;
     object-position: center;
+    filter: brightness(50%)
   }
   .div-img {
     position: relative;

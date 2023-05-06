@@ -77,6 +77,7 @@ const Skill = () => {
             icon={skill.icon}
             title={skill.name}
             color={skill.color}
+            info={skill.info}
           />
         ))}
       </div>

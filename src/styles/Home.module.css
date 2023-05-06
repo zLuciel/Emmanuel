@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   border-bottom: 5px solid rgb(0, 0, 0);
+  filter: blur(0px);
 }
 .contentimg {
   position: absolute;
@@ -49,7 +50,7 @@
   background: url('/78.jpg') center center/cover no-repeat fixed;
   background: url('/rgb.png') center center/cover no-repeat fixed;
   background: url('/neon.png') center center/cover no-repeat fixed;
-  opacity: 0.3;
+  opacity: 1;
   z-index: -1;
-  filter: brightness(20%) saturate(150%) ;
+  filter: brightness(20%) saturate(150%) blur(2.5px) ;
 }
