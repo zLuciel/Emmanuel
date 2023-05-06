@@ -62,10 +62,10 @@ const Skill = () => {
       <Title
         descriptionRef={descriptionRef}
         subtitle={"ourd wards"}
-        parrafo="This is the main factor that 
-        sets us apart from our competition and allows us to deliver 
-        a specialist business consultancy service. Our team applies
-         its wide-ranging experience to"
+        parrafo=" Estoy familiarizado con herramientas y 
+        tecnologías modernas para el desarrollo y estoy 
+        comprometido a seguir aprendiendo y mejorando mis
+         habilidades continuamente."
         title={"Skill And Aptitudes"}
       />
       {/*<button>Skill</button>

@@ -2,6 +2,7 @@
 import styled from "styled-components";
 
 export const PresentacionGrid = styled.div`
+padding: 0 20px;
   margin-bottom: 145px;
   position: relative;
   display: grid;
@@ -27,6 +28,14 @@ export const Nombre = styled.div`
     color: transparent;
     //text-stroke: 2px black;
     -webkit-text-stroke: 2px white;
+     //**Responsive */
+  @media screen and (max-width: 629px){
+    font-size: 8rem;
+  }
+  @media screen and (max-width: 629px){
+    font-size: 6rem;
+    line-height: 100px;
+  }
   }
   .stack {
     color: var(--primary-color);
@@ -54,5 +63,6 @@ export const CardSectionContainer = styled.div`
   left: 50%;
   bottom: 0%;
   transform: translate(-50%, 100%);
+  z-index: 4;
 `;
 

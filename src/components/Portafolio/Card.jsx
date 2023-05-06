@@ -26,6 +26,7 @@ const data = [
     parrafo: "Sed ut persepecticcion unde omns ste antus error",
     img: gamesapi,
   },
+
 ];
 
 const Card = ({ setImage,cardivRef }) => {

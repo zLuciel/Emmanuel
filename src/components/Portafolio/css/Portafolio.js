@@ -30,6 +30,7 @@ export const PortafolioContainer = styled.section`
 export const PrincipalImg = styled.div`
 height: max-content;
   p {
+    max-width: 700px;
     margin-bottom: 20px;
   }
   h1 {

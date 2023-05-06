@@ -12,6 +12,10 @@ export const HeaderContainer = styled.header`
   align-items: center;
   background: rgba(255, 255, 255, 0.01);
   backdrop-filter: blur(7.5px);
+      //**Responsive */
+      @media screen and (max-width: 875px){
+        display: none;
+      }
 `;
 
 export const Nav = styled.nav`

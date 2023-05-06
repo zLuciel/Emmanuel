@@ -4,6 +4,7 @@ import styled from "styled-components";
 export const CardSectionMain = styled.section`
   position: relative;
   max-width: 1400px;
+  
   height: 256px;
   background: linear-gradient(267.18deg,#161616,#080808);
   //border-width: 0px 3px 3px 3px;
@@ -16,7 +17,13 @@ export const CardSectionMain = styled.section`
   justify-content: center;
   align-items: center;
   gap: 50px;
-  overflow: hidden;
+  overflow: hidden;  
+  //**Responsive  */
+    @media screen and (max-width: 1293px){
+    max-width: 900px;
+    flex-direction: column;
+    height: max-content;
+  }
   .absolute{
     background-image: url("./svg_section.svg");
     background-position: 100% 100%;
@@ -49,12 +56,12 @@ export const Column2 = styled.div`
    position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 25px;
+  gap: 10px 45px;
   z-index: 4;
 `;
 export const NumberSection = styled.div`
   display: flex;
-  justify-content: center;
+  
   align-items: center;
   gap: 15px;
   h4 {

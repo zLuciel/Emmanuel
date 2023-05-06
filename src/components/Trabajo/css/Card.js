@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const GridImg = styled.div`
   .grid {
-    padding: 30px 0;
+    padding-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px,  1fr));
     gap:  30px 50px;

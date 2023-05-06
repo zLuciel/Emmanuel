@@ -25,7 +25,7 @@ const data = [
   },
   {
     title: "Gogle Wars",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
+    parrafo: "Sed ut persepecticcion unde omns ste antus error ",
     subtitle: 2023,
   },
   {

@@ -6,9 +6,10 @@ export const GridImg = styled.div`
   align-self: end;
   max-width: 600px;
   .grid {
-    padding: 10px 0;
+    padding-top: 5px;
     display: grid;
     grid-template-columns: repeat(2, 280px);
+  
     gap:  30px 30px;
     place-content: center;
     //**responsive */
@@ -34,15 +35,11 @@ export const FlexContent = styled.div`
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
   h4 {
     color: var(--primary-color);
     font-size: 2.2rem;
   }
-  p {
-    max-width: 200px;
-  }
- 
   .img {
     border-radius: 5px;
     object-fit: cover;
