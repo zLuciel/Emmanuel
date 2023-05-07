@@ -22,6 +22,7 @@
   position: absolute;
   left: -40px;
   overflow: hidden;
+  min-width: 440px;
   display: flex;
   justify-content: center;
   align-items: center;
