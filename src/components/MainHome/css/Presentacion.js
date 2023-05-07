@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 export const PresentacionGrid = styled.div`
-padding: 0 20px;
+  padding: 0 20px;
   margin-bottom: 145px;
   position: relative;
   display: grid;

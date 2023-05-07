@@ -19,11 +19,12 @@
   border-bottom: 5px solid rgb(0, 0, 0);
 }
 .contentimg {
+
   position: absolute;
   left: -40px;
   overflow: hidden;
   min-width: 440px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   margin-top: 77px;
