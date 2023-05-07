@@ -10,7 +10,7 @@ const HeaderGsap = (nav, nav1, nav2, nav3, nav4) => {
       [nav.current, nav1.current, nav2.current, nav3.current, nav4.current],
       { y: -100 },
       {
-        delay: 1,
+        delay: 3,
         duration: 1,
         opacity: 1,
         y: 0,

@@ -9,12 +9,29 @@ import Skill from "@/components/Skill/Skill";
 import Footer from "@/components/Footer/Footer";
 import Form from "@/components/Form/Form";
 import Hamburger from "@/components/Hamburger/Hamburger";
+import { useEffect, useRef } from "react";
+
+import PresentacionInicial from "@/gsap";
 
 export default function Home() {
+  const animacion = useRef(null);
+  const title = useRef(null);
+  const subtitle = useRef(null);
+
+  useEffect(() => {
+    PresentacionInicial(animacion, title, subtitle);
+  }, []);
+
   return (
     <>
-      <div className={`${styles.fixedBg}`}>
+      <div ref={animacion} className={`${styles.animacionStart}`}>
+        <div className={`${styles.animacionStartCenter}`}>
+          <h1 ref={title}>Emmanuel</h1>
+          <p ref={subtitle}>Developer</p>
+        </div>
       </div>
+
+      <div className={`${styles.fixedBg}`}></div>
       <span className={`${styles.contentimg}`}>Emmanuel Abregú</span>
       <Head>
         <title>Emmanuel Abregú</title>
@@ -22,21 +39,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hamburger/>
+      <Hamburger />
       <Header />
       <main>
         <Presentacion />
-       <div className={`${styles.containerbg2}`}>
-        <div className={`${styles.bg2}`}>
+        <div className={`${styles.containerbg2}`}>
+          <div className={`${styles.bg2}`}></div>
+          <About />
+          <Portafolio />
+          <Trabajo />
+          <Skill />
+          <Form />
         </div>
-        <About />
-        <Portafolio />
-        <Trabajo />
-        <Skill />
-        <Form/>
-       </div>
       </main>
-     {/* <Footer />*/}
+      {/* <Footer />*/}
     </>
   );
 }

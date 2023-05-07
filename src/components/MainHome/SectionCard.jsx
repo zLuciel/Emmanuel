@@ -5,33 +5,20 @@ import {
   Column2,
   NumberSection,
 } from "./css/SectionCard";
-import { gsap } from "gsap";
-import Image from "next/image";
-import SvgSection from "../../assets/svg_section.svg";
+import { SectionAnimate } from "./gsap";
+
 
 const SectionCard = () => {
-  const colum1 = useRef();
-  const colum2 = useRef();
+  const colum1 = useRef(null);
+  const colum2 = useRef(null);
+  const containerCard = useRef(null)
+
   useEffect(() => {
-    const tl = gsap.timeline();
-    tl.set([colum1.current, colum2.current], { opacity: 0 }) // establecer opacidad inicial en 0
-      .fromTo(
-        [colum1.current, colum2.current],
-        { x: -100 },
-        {
-          delay: 3,
-          duration: 0.5,
-          opacity: 1,
-          x: 0,
-          stagger: {
-            amount: 0.5,
-          },
-          ease: "expo.out",
-        }
-      );
+   SectionAnimate(colum1,colum2,containerCard)
   }, []);
+
   return (
-    <CardSectionMain>
+    <CardSectionMain ref={containerCard}>
       {
         <div className="absolute">
           <svg

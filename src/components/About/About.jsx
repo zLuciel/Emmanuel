@@ -9,45 +9,45 @@ import { BsFillChatSquareHeartFill } from 'react-icons/bs';
 
 const About = () => {
   const containerRef = useRef(null);
- // const titleRef = useRef(null);
-  //const descriptionRef = useRef(null);
+  const titleRef = useRef(null);
+  const descriptionRef = useRef(null);
   const CardChildren = useRef(null);
   //const imageRef = useRef(null);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
     const children = CardChildren.current.children;
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.fromTo(
+      [titleRef.current, descriptionRef.current],
+      { opacity: 0, y: 50 },
+      { opacity: 1, y: 0, duration: 1,scrollTrigger: {
         trigger: containerRef.current,
-        start: "top 300px", //50 sin scroll o 150 con
-        end: "bottom 0%",
-        scrub: true,
-      },
-    });
-    
-    gsap.fromTo(children, {
-      opacity: 0,
-      x: 50,
-    }, {
-      opacity: 1,
-      x: 0,
-      duration: 1,
-      stagger: 0.5,
-      scrollTrigger: {
-        trigger: children,
-        start: "top 800px",
-        once: true,
-      },
-    });
+        start: "center bottom",
+        once: true
+      } }
+    );
 
+    gsap.fromTo(
+      children,
+      { opacity: 0, x: 50 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        stagger: 0.5,
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top 80%",
+          once: true
+        }
+      }
+    );
   }, []);
   
 
   return (
     <AboutContainer ref={containerRef}>
-      <Title subtitle="Our Awards" title="Conoceme mejor" />
+      <Title descriptionRef={descriptionRef} titleRef={titleRef} subtitle="Our Awards" title="Conoceme mejor" />
       <CardGrid ref={CardChildren}>
         <CardDetail>
           <span><h3>¿Quien soy?</h3> <BsFillChatSquareHeartFill className="icon"/></span>
