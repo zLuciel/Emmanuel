@@ -2,6 +2,7 @@
 import styled from "styled-components";
 
 export const PresentacionGrid = styled.div`
+ overflow: hidden;
 padding: 0 20px;
   margin-bottom: 145px;
   position: relative;
