@@ -19,12 +19,11 @@
   border-bottom: 5px solid rgb(0, 0, 0);
 }
 .contentimg {
-
   position: absolute;
   left: -40px;
   overflow: hidden;
-  min-width: 440px;
-  display: none;
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 77px;
@@ -68,7 +67,7 @@
   overflow: hidden;
   position: fixed;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   top: 0;
   z-index: 30;
   display: flex;
