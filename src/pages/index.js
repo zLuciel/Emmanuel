@@ -32,7 +32,7 @@ export default function Home() {
       </div>
 
       <div className={`${styles.fixedBg}`}></div>
-      <span className={`${styles.contentimg}`}>Emmanuel Abregú</span>
+      <div className={`${styles.contentimg}`}>Emmanuel Abregú</div>
       <Head>
         <title>Emmanuel Abregú</title>
         <meta name="description" content="Desarrollador full stack" />
@@ -41,7 +41,7 @@ export default function Home() {
       </Head>
       <Hamburger />
       <Header />
-      <main style={{overflow:"hidden"}}>
+      <main>
         <Presentacion />
         <div className={`${styles.containerbg2}`}>
           <div className={`${styles.bg2}`}></div>
