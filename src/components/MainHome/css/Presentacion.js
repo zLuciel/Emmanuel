@@ -2,7 +2,6 @@
 import styled from "styled-components";
 
 export const PresentacionGrid = styled.div`
-  padding: 0 20px;
   margin-bottom: 145px;
   position: relative;
   display: grid;
@@ -17,6 +16,7 @@ export const PresentacionGrid = styled.div`
   }
 `;
 export const Nombre = styled.div`
+  padding: 0 20px;
   grid-area: Presentacion;
   /* border-radius: 10px;
   background: rgba(0, 0, 0, 0.12);
@@ -34,11 +34,16 @@ export const Nombre = styled.div`
     -webkit-text-stroke: 2px white;
      //**Responsive */
   @media screen and (max-width: 629px){
-    font-size: 8rem;
-  }
-  @media screen and (max-width: 629px){
     font-size: 6rem;
     line-height: 100px;
+  }
+  @media screen and (max-width: 484px){
+    font-size: 5rem;
+    line-height: 80px;
+  }
+  @media screen and (max-width: 375px){
+    font-size: 3.5rem;
+    line-height: 60px;
   }
   }
   .stack {
@@ -53,6 +58,10 @@ export const Nombre = styled.div`
     max-width: 600px;
     text-align: center;
     //padding: 10px 30px;
+    //**Responsive */
+    @media screen and (max-width: 375px){
+    font-size: 1rem;  
+  }
   }
 `;
 
