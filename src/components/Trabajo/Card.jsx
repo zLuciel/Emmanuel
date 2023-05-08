@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Carousel } from "@mantine/carousel";
 import { FlexContent, GridImg } from "./css/Card";
 const data = [
@@ -45,7 +44,7 @@ const data = [
   },
 ];
 
-const Card = () => {
+const Card = ({cardivRef}) => {
   return (
     <GridImg>
       <Carousel
@@ -57,7 +56,7 @@ const Card = () => {
         withControls={false}
         slideGap="xl"
       >
-        <Carousel.Slide className="grid">
+        <Carousel.Slide ref={cardivRef} className="grid">
           {data.map((card, i) => (
             <FlexContent key={i} >
               <h4>{card.subtitle}</h4>

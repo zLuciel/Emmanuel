@@ -1,7 +1,10 @@
-
 import { useEffect, useRef } from "react";
 //import Emmanuel from "@/assets/emmanuelAbregu.jpg";
-import { CardSectionContainer, Nombre, PresentacionGrid } from "./css/Presentacion";
+import {
+  CardSectionContainer,
+  Nombre,
+  PresentacionGrid,
+} from "./css/Presentacion";
 import SectionCard from "./SectionCard";
 import Redes from "../Redes/Redes";
 import { MainAnimate } from "./gsap";
@@ -9,25 +12,26 @@ import { MainAnimate } from "./gsap";
 const Presentacion = () => {
   const TextCenter = useRef();
   useEffect(() => {
-   MainAnimate(TextCenter)
+    MainAnimate(TextCenter);
   }, []);
 
   return (
-    <PresentacionGrid >
+    <PresentacionGrid>
       <Nombre ref={TextCenter}>
         <h1>Desarrolador</h1>
         <h1 className="stack">Full Stack</h1>
-        <p  >
-          Tengo conocimientos solidos en distintos lenguajes, con habilidadeS
-          que me hacen destacar del resto. Ademas, de la programación tengo
-          conocimientos en el area de diseño web.
+        <p>
+          Mi objetivo es no sólo satisfacer las necesidades del cliente, sino
+          superar sus expectativas. Con una sólida formación técnica y una
+          amplia experiencia en proyectos de desarrollo web
         </p>
-        <Redes/>
+        <Redes />
       </Nombre>
-      {<CardSectionContainer >
-       <SectionCard/>
-      </CardSectionContainer>}
-      
+      {
+        <CardSectionContainer>
+          <SectionCard />
+        </CardSectionContainer>
+      }
     </PresentacionGrid>
   );
 };

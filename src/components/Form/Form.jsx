@@ -39,6 +39,7 @@ const Form = () => {
             <label>
               Nombre
               <input
+              autoComplete="off"
                 type="text"
                 name="name"
                 value={formData.name}
@@ -48,6 +49,7 @@ const Form = () => {
             <label>
               Email
               <input
+              autoComplete="off"
                 type="email"
                 name="email"
                 value={formData.email}

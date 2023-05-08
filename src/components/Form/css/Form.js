@@ -8,12 +8,12 @@ export const ContainerForm = styled.section`
   display: grid;
   grid-template-columns: 641px 1fr;
   gap: 50px;
-   //**Responsive  */
-   @media screen and (max-width: 1293px){
+  //**Responsive  */
+  @media screen and (max-width: 1293px) {
     max-width: 900px;
     grid-template-columns: 1fr;
   }
-  @media screen and (max-width: 579px){
+  @media screen and (max-width: 579px) {
     max-width: 500px;
   }
   & > div > p {
@@ -39,9 +39,12 @@ export const FlexForm = styled.form`
   }
   input,
   textarea {
+    resize: vertical;
+    max-width: 100%;
+    font-size: 1rem;
     margin-bottom: 30px;
     position: relative;
-    background: none;
+    background: transparent;
     outline: none;
     border: none;
     color: white;
@@ -65,8 +68,8 @@ export const FlexPrimer = styled.div`
   position: relative;
   font-size: 1.5rem;
   gap: 20px;
-  @media screen and (max-width: 450px){
-      flex-direction: column;
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
   }
   & > label {
     display: flex;
@@ -76,17 +79,17 @@ export const FlexPrimer = styled.div`
 `;
 
 export const ButtonForm = styled.div`
-margin-top: 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-button{
-cursor: pointer;
-background: var(--primary-color);
-padding: 3px 25px;
-font-family: "Bebas Neue";
-font-size: 1.3rem;
-border: none;
-}
-` 
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  button {
+    cursor: pointer;
+    background: var(--primary-color);
+    padding: 3px 25px;
+    font-family: "Bebas Neue";
+    font-size: 1.3rem;
+    border: none;
+  }
+`;

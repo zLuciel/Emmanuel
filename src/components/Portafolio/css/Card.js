@@ -13,6 +13,9 @@ export const GridImg = styled.div`
     gap:  30px 30px;
     place-content: center;
     //**responsive */
+    @media screen and (max-width: 1293px){
+      grid-template-columns: 1fr 1fr;
+    }
     @media screen and (max-width: 675px){
       gap:  30px 10px;
       place-content: start;
@@ -28,6 +31,7 @@ export const GridImg = styled.div`
    @media screen and (max-width: 1293px){
     justify-self: start;
     align-self: start;
+    max-width: none;
    }
 `;
 

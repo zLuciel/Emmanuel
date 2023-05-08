@@ -16,6 +16,7 @@ export const PresentacionGrid = styled.div`
   }
 `;
 export const Nombre = styled.div`
+  max-width: 800px;
   padding: 0 20px;
   grid-area: Presentacion;
   /* border-radius: 10px;
@@ -55,7 +56,6 @@ export const Nombre = styled.div`
     font-size: 1.1rem;
     line-height: 1.3;
     color: white;
-    max-width: 600px;
     text-align: center;
     //padding: 10px 30px;
     //**Responsive */

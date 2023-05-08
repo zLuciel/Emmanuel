@@ -1,115 +1,31 @@
 import { useEffect, useRef, useState } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 import { PrincipalImg, PortafolioContainer } from "./css/Portafolio";
 import Image from "next/legacy/image";
 import Card from "./Card";
 import Title from "../Title/Title";
 import gamesapi from "@/assets/gamesapi.png";
+import { PortafolioAnimate } from "./css/gsap";
 
 const Portafolio = () => {
-  const containerRefx = useRef(null);
-  const titleRefxs = useRef(null);
-  const descriptionRefx = useRef(null);
-  const imageRefx = useRef(null);
-  const cardiv = useRef(null);
+  const containerRef = useRef(null);
+  const titleRef = useRef(null);
+  const descriptionRef = useRef(null);
+  const imageRef = useRef(null);
+  const cardivRef = useRef(null);
   const [image, setImage] = useState(gamesapi);
-  /*const [tl2, setTl2] = useState(null);
 
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const children = cardiv.current.children;
-
-    // Timeline para los hijos de cardiv
-    const tl2 = gsap.timeline({
-      paused: true,
-    });
-
-    tl2.fromTo(
-      children,
-      {
-        opacity: 0,
-        y: 100,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        stagger: 0.5,
-        delay: 1,
-      }
-    );
-
-
-    // Timeline principal
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRefx.current,
-        start: "top 100%",
-        end: "bottom 100%",
-        // scrub: true,
-      },
-    });
-    const tl3 = gsap.timeline({
-      scrollTrigger: {
-        trigger: containerRefx.current,
-        start: "top 100%",
-        end: "bottom 80%",
-        //scrub: true,
-       
-      },
-    });
-    tl.fromTo(
-      titleRefxs.current,
-      {
-        opacity: 0,
-        x: -850,
-      },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1,
-      },
-      "-=1.5"
-    ).fromTo(
-      descriptionRefx.current,
-      {
-        x: -550,
-        opacity: 0,
-      },
-      {
-        duration: 1,
-        x: 0,
-        opacity: 1,
-      },
-      "-=1.5"
-    );
-    tl3.fromTo(
-      imageRefx.current,
-      {
-        opacity: 0,
-        width: 0,
-        //height:379,
-      },
-      {
-        opacity: 1,
-        width: "100%",
-        duration: 1,
-        ease: "expo.out",
-        delay: 2,
-      },
-      "-=0.8"
-    );
-  }, []);*/
+    PortafolioAnimate(containerRef,titleRef,descriptionRef,imageRef,cardivRef)
+  }, []);
 
   return (
-    <PortafolioContainer ref={containerRefx}>
+    <PortafolioContainer ref={containerRef}>
       <PrincipalImg>
         <Title
-          //titleRef={titleRefxs}
-          //descriptionRef={descriptionRefx}
+          titleRef={titleRef}
+          descriptionRef={descriptionRef}
           parrafo="Durante mi carrera como desarrollador web 
           he tenido la oportunidad de trabajar en diversos 
           proyectos que han requerido de habilidades técnicas y creativas."
@@ -117,7 +33,7 @@ const Portafolio = () => {
           title={"Mis Proyectos Realizados"}
         />
         <div className="div-img">
-          <div ref={imageRefx}>
+          <div ref={imageRef}>
             <Image
               className="img"
               src={image}
@@ -137,7 +53,7 @@ const Portafolio = () => {
   </div>*/}
         </div>
       </PrincipalImg>
-      <Card  setImage={setImage} />
+      <Card cardivRef={cardivRef} setImage={setImage} />
     </PortafolioContainer>
   );
 };
