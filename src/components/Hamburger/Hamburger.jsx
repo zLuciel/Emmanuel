@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ContainerHambruger, HamburgerIcon } from "./css/Hamburger";

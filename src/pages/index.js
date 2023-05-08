@@ -41,7 +41,7 @@ export default function Home() {
       </Head>
       <Hamburger />
       <Header />
-      <main>
+      <main style={{overflow:"hidden"}}>
         <Presentacion />
         <div className={`${styles.containerbg2}`}>
           <div className={`${styles.bg2}`}></div>

@@ -22,7 +22,7 @@
 .contentimg {
   position: absolute;
   left: -40px;
-  overflow: hidden;
+ /* overflow: hidden;*/
   width: 100%;
   display: flex;
   justify-content: center;
