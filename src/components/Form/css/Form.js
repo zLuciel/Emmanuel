@@ -18,7 +18,7 @@ export const ContainerForm = styled.section`
   }
   & > div > p {
     margin-bottom: 20px;
-    max-width: 700px;
+    //max-width: 700px;
   }
   h1 {
     color: var(--primary-color);
@@ -65,12 +65,13 @@ export const FlexPrimer = styled.div`
   position: relative;
   font-size: 1.5rem;
   gap: 20px;
+  @media screen and (max-width: 450px){
+      flex-direction: column;
+  }
   & > label {
     display: flex;
     flex-direction: column;
     width: 100%;
-    input {
-    }
   }
 `;
 
