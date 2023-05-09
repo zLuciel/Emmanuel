@@ -34,6 +34,9 @@ export const Nombre = styled.div`
     //text-stroke: 2px black;
     -webkit-text-stroke: 2px white;
      //**Responsive */
+  @media screen and (max-width: 712px){
+    font-size: 8rem;
+  }
   @media screen and (max-width: 629px){
     font-size: 6rem;
     line-height: 100px;
@@ -68,14 +71,22 @@ export const Nombre = styled.div`
 
 export const CardSectionContainer = styled.div`
   padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ // display: flex;
+  //align-items: center;
+ // justify-content: center;
   width: 100%;
+  max-width: 1400px;
   position: absolute;
   left: 50%;
   bottom: 0%;
   transform: translate(-50%, 100%);
   z-index: 4;
+    //**Responsive */
+    @media screen and (max-width: 1293px){
+      max-width: 900px;
+  }
+  @media screen and (max-width: 543px){
+    max-width: 500px;
+  }
 `;
 

@@ -22,7 +22,7 @@ const Hamburger = () => {
         />
       </HamburgerIcon>
       <ContainerHambruger ref={hamburger}>
-        <Nav type={visible} hambur={true} />
+        <Nav tipo={visible} hambur={true} />
       </ContainerHambruger>
     </>
   );

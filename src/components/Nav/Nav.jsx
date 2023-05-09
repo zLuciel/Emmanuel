@@ -3,7 +3,7 @@ import { NavContainer,ListNav } from './css/Nav'
 import HeaderGsap from '../Header/gsap';
 
 
-export const Nav = ({type,hambur}) => {
+export const Nav = ({tipo,hambur}) => {
 
   const nav = useRef(null);
   const nav1 = useRef(null);
@@ -14,7 +14,7 @@ export const Nav = ({type,hambur}) => {
    HeaderGsap(nav,nav1,nav2,nav3,nav4)
   }, []);
   return (
-    <NavContainer type={type}>
+    <NavContainer tipo={tipo}>
     <ListNav hambur={hambur}>
       <li ref={nav}>Home</li>
       <li ref={nav1}>Portafolio</li>

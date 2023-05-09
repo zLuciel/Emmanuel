@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const NavContainer = styled.nav`
- display: ${({type})=> !type ? "none" : "flex"};
+ display: ${({tipo})=> !tipo ? "none" : "flex"};
   width: max-content;
   padding: 15px;
   @media screen and (max-width: 875px){
@@ -28,10 +28,10 @@ export const ListNav = styled.ul`
     padding: 5px 10px;
     background: #dbff00;
     box-shadow: -4px 4px 10px #000000;
-    //transition: transform 0.3s ease-in-out;
-    /*:hover {
+    transition: transform 0.3s ease-in-out;
+    :hover {
       transform: translate(5px, -5px);
-    }*/
+    }
   }
 
   li {

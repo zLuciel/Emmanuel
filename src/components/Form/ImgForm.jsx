@@ -3,9 +3,9 @@ import React from 'react'
 import Img from "@/assets/form.jpg"
 import { ImgContainer } from './css/ImgForm'
 import Redes from '../Redes/Redes'
-const ImgForm = () => {
+const ImgForm = ({imgRef}) => {
   return (
-    <ImgContainer>
+    <ImgContainer ref={imgRef}>
       <Image
       className='image'
       src={Img}

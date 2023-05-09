@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Title from "../Title/Title";
 import { ButtonForm, ContainerForm, FlexForm, FlexPrimer } from "./css/Form";
 import ImgForm from "./ImgForm";
+import { FormAnimate } from "./gsap";
 
 const Form = () => {
+  const descriptionRef = useRef(null);
+  const titleRef = useRef(null);
+  const containerRef = useRef(null);
+  const CardChildren = useRef(null);
+  const imgRef = useRef(null);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,23 +30,28 @@ const Form = () => {
     console.log(formData);
   };
 
+  useEffect(() => {
+    FormAnimate(containerRef, titleRef, descriptionRef, CardChildren, imgRef);
+  }, []);
+
   return (
-    <ContainerForm>
+    <ContainerForm ref={containerRef}>
       <div>
         <Title
+        titleRef={titleRef}
+        descriptionRef={descriptionRef}
           title={"Contactame"}
           subtitle={"Trabajemos juntos"}
           parrafo="¿Buscas un desarrollador Full Stack talentoso 
           y dedicado para tu equipo? ¡Aquí estoy! Listo para asumir
            nuevos retos y crear soluciones innovadoras juntos"
-          
         />
-        <FlexForm onSubmit={handleSubmit}>
+        <FlexForm onSubmit={handleSubmit}  ref={ CardChildren}>
           <FlexPrimer>
             <label>
               Nombre
               <input
-              autoComplete="off"
+                autoComplete="off"
                 type="text"
                 name="name"
                 value={formData.name}
@@ -49,7 +61,7 @@ const Form = () => {
             <label>
               Email
               <input
-              autoComplete="off"
+                autoComplete="off"
                 type="email"
                 name="email"
                 value={formData.email}
@@ -79,7 +91,7 @@ const Form = () => {
           </ButtonForm>
         </FlexForm>
       </div>
-      <ImgForm />
+      <ImgForm imgRef={imgRef} />
     </ContainerForm>
   );
 };

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <> 
     <HeaderContainer>
-     <Nav type={true}/>
+     <Nav tipo={true}/>
     </HeaderContainer>
     </>
   );

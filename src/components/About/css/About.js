@@ -20,11 +20,15 @@ export const AboutContainer = styled.section`
   }
   //**Responsive */
   @media screen and (max-width: 1293px) {
-    padding-top: 350px;
+    padding-top: 320px;
     max-width: 900px;
   }
   @media screen and (max-width: 579px){
-    padding-top: 380px;
+   
+    max-width: 500px;
+  }
+  @media screen and (max-width: 543px){
+    padding-top: 530px;
     max-width: 500px;
   }
 `;
