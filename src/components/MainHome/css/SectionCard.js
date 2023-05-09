@@ -113,6 +113,9 @@ export const NumberSection = styled.div`
       color: var(--primary-color);
     }
     p {
+      @media screen and (max-width: 414px){
+      font-size: 1rem;
+    }
     }
   }
 `;

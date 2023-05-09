@@ -6,7 +6,7 @@ import Image from "next/legacy/image";
 import Card from "./Card";
 import Title from "../Title/Title";
 import gamesapi from "@/assets/gamesapi.png";
-import { PortafolioAnimate } from "./css/gsap";
+import { PortafolioAnimate } from "./gsap";
 
 const Portafolio = () => {
   const containerRef = useRef(null);

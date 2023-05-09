@@ -23,6 +23,11 @@ export const SkillContainer = styled.section`
     font-style: normal;
     font-weight: 400;
     line-height: 77px;
+      //**responsive */
+      @media screen and (max-width: 454px){
+      font-size: 3rem;
+      line-height: 55px;
+    }
   }
   .grid{
     display: grid;
