@@ -24,6 +24,9 @@ export const CardSectionMain = styled.section`
     flex-direction: column;
     height: max-content;
   }
+  @media screen and (max-width: 400px){
+    padding: 20px 30px;
+  }
   .absolute {
     background-image: url("./svg_section.svg");
     background-position: 100% 100%;
@@ -50,9 +53,17 @@ export const Column1 = styled.div`
     font-weight: 400;
     font-size: 5rem;
     line-height: 85px;
+    //**Responsive  */
+    @media screen and (max-width: 414px){
+      font-size: 3rem;
+      line-height: 60px;
+    }
   }
   p {
     max-width: 600px;
+    @media screen and (max-width: 414px){
+      font-size: 0.9rem;
+    }
   }
 `;
 
@@ -81,6 +92,10 @@ export const NumberSection = styled.div`
   h4 {
     font-size: 4rem;
     line-height: normal;
+    //*Responsive*/
+    @media screen and (max-width: 414px){
+      font-size: 3rem;
+    }
   }
   div {
     justify-self: center;
