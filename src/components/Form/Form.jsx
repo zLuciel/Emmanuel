@@ -25,9 +25,23 @@ const Form = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     console.log(formData);
+    try {
+      const response = await fetch("/api/sendEmail", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error("Error al enviar el correo electrónico", error);
+      // Maneja cualquier error que ocurra durante el envío del correo electrónico
+    }
   };
 
   useEffect(() => {
@@ -38,15 +52,15 @@ const Form = () => {
     <ContainerForm ref={containerRef}>
       <div>
         <Title
-        titleRef={titleRef}
-        descriptionRef={descriptionRef}
+          titleRef={titleRef}
+          descriptionRef={descriptionRef}
           title={"Contactame"}
           subtitle={"Trabajemos juntos"}
           parrafo="¿Buscas un desarrollador Full Stack talentoso 
           y dedicado para tu equipo? ¡Aquí estoy! Listo para asumir
            nuevos retos y crear soluciones innovadoras juntos"
         />
-        <FlexForm onSubmit={handleSubmit}  ref={ CardChildren}>
+        <FlexForm onSubmit={handleSubmit} ref={CardChildren}>
           <FlexPrimer>
             <label>
               Nombre
