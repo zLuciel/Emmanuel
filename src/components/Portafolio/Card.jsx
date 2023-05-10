@@ -29,7 +29,7 @@ const data = [
 
 ];
 
-const Card = ({ setImage,cardivRef }) => {
+const Card = ({ changeImage,cardivRef }) => {
 
   return (
     <GridImg>
@@ -44,7 +44,7 @@ const Card = ({ setImage,cardivRef }) => {
       >
         <Carousel.Slide ref={cardivRef} className="grid">
           {data.map((card, i) => (
-            <FlexContent key={i} onMouseOver={() => setImage(card.img)}>
+            <FlexContent key={i} onClick={() => changeImage(card.img)}>
               <h4>{card.title}</h4>
               <p>{card.parrafo}</p>
               
@@ -63,7 +63,7 @@ const Card = ({ setImage,cardivRef }) => {
         </Carousel.Slide>
         <Carousel.Slide className="grid">
           {data.map((card, i) => (
-            <FlexContent key={i} onMouseOver={() => setImage(card.img)}>
+            <FlexContent key={i} onClick={() => changeImage(card.img)}>
               <h4>{card.title}</h4>
               <p>{card.parrafo}</p>
               <Image

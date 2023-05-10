@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 
-const HandleHamburguer = (setVisible,hamburger,visible) => {
+export const HandleHamburguer = (setVisible,hamburger,visible) => {
     const element = hamburger.current;
     const tl = gsap.timeline();
     if (element.style.display === "block") {
@@ -30,5 +30,4 @@ const HandleHamburguer = (setVisible,hamburger,visible) => {
     }
     setVisible(!visible);
   };
-
-  export default HandleHamburguer
+ 

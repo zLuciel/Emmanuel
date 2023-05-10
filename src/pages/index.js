@@ -12,11 +12,13 @@ import Hamburger from "@/components/Hamburger/Hamburger";
 import { useEffect, useRef } from "react";
 
 import PresentacionInicial from "@/gsap";
+import useWidthPage from "@/Hooks/useWidthPage";
 
 export default function Home() {
   const animacion = useRef(null);
   const title = useRef(null);
   const subtitle = useRef(null);
+  const [widthPage] = useWidthPage(875)
 
   useEffect(() => {
     PresentacionInicial(animacion, title, subtitle);
@@ -39,7 +41,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hamburger />
+      { widthPage && <Hamburger />}
       <Header />
       <main>
         <Presentacion />

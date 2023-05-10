@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 export const PortafolioContainer = styled.section`
-  padding: 0px 30px ;
+  padding: 0px 30px;
   max-width: 1400px;
   margin: 0 auto;
   margin-bottom: 80px;
@@ -10,24 +10,24 @@ export const PortafolioContainer = styled.section`
   grid-template-columns: minmax(600px, 700px) 1fr;
   place-content: center;
   column-gap: 20px;
-    //**Responsive  */
-    @media screen and (max-width: 1293px) {
-    grid-template-columns:1fr;
+  //**Responsive  */
+  @media screen and (max-width: 1293px) {
+    grid-template-columns: 1fr;
     grid-template-rows: max-content 1fr;
     max-width: 900px;
-    row-gap:50px;
+    row-gap: 50px;
     place-content: start;
   }
-  @media screen and (max-width: 675px){
+  @media screen and (max-width: 675px) {
     grid-template-columns: minmax(1fr, 700px);
   }
-  @media screen and (max-width: 579px){
+  @media screen and (max-width: 579px) {
     max-width: 500px;
   }
 `;
 
 export const PrincipalImg = styled.div`
-height: max-content;
+  height: max-content;
   p {
     max-width: 700px;
     margin-bottom: 20px;
@@ -38,13 +38,13 @@ height: max-content;
     font-style: normal;
     font-weight: 400;
     line-height: 77px;
-     //**responsive */
-     @media screen and (max-width: 454px){
+    //**responsive */
+    @media screen and (max-width: 454px) {
       font-size: 3rem;
       line-height: 55px;
     }
   }
- .img {
+  .img {
     border-radius: 5px;
     object-fit: cover;
     object-position: center;
@@ -63,4 +63,15 @@ height: max-content;
     padding: 10px;
     border-radius: 5px;
   }
+`;
+
+export const FondoAnimate = styled.div`
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: 400;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(7.5px);
+  backdrop-filter: blur(7.5px);
 `;
