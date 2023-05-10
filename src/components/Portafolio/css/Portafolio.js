@@ -60,7 +60,7 @@ export const PrincipalImg = styled.div`
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(7.5px);
     /* Note: backdrop-filter has minimal browser support */
-    padding: 10px;
+    padding: 5px 8px;
     border-radius: 5px;
   }
 `;

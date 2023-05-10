@@ -10,6 +10,7 @@ import gamesapi from "@/assets/gamesapi.png";
 import { PortafolioAnimate } from "./gsap";
 import { gsap } from "gsap";
 import { useState, useEffect, useRef } from "react";
+import Redes from "../Redes/Redes";
 
 const Portafolio = () => {
   const containerRef = useRef(null);
@@ -77,6 +78,9 @@ const Portafolio = () => {
               alt="Descripción de mi imagen"
               layout="responsive"
             />
+            <div className="title-img">
+              <Redes/>
+            </div>
           </div>
         </div>
       </PrincipalImg>
