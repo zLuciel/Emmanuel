@@ -57,7 +57,7 @@ const Portafolio = () => {
   };
 
   return (
-    <PortafolioContainer ref={containerRef}>
+    <PortafolioContainer id="portfolio" ref={containerRef}>
       <PrincipalImg>
         <Title
           titleRef={titleRef}

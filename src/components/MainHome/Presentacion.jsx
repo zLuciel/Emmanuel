@@ -16,7 +16,7 @@ const Presentacion = () => {
   }, []);
 
   return (
-    <PresentacionGrid>
+    <PresentacionGrid id="home">
       <Nombre ref={TextCenter}>
         <h1>Desarrolador</h1>
         <h1 className="stack">Full Stack</h1>

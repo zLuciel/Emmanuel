@@ -8,21 +8,21 @@ import Ong from "@/assets/Ong.png"
 const data = [
   {
     title: "Api Gamer",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
+    parrafo: "Pagina web de informacion de videojuegos",
     img: gamesapi,
   },
   {
     title: "Rick and Morty",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
+    parrafo: "Informacion de todos los personajes de la serie",
     img: rickapi,
   },
   {
     title: "AES",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
+    parrafo: "Pasantia con informacion y blog sobre la salud sanitaria",
     img: Ong,
   },
   {
-    title: "Gogle Wars",
+    title: "Proximo",
     parrafo: "Sed ut persepecticcion unde omns ste antus error",
     img: gamesapi,
   },

@@ -18,7 +18,7 @@ const About = () => {
   }, []);
 
   return (
-    <AboutContainer ref={containerRef}>
+    <AboutContainer id="about" ref={containerRef}>
       <Title
         descriptionRef={descriptionRef}
         titleRef={titleRef}

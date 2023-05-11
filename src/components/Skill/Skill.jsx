@@ -18,7 +18,7 @@ const Skill = () => {
   },[])
 
   return (
-    <SkillContainer ref={SkillRef}>
+    <SkillContainer id="skill" ref={SkillRef}>
       <Title
         descriptionRef={descriptionRef}
         subtitle={"ourd wards"}

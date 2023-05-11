@@ -1,48 +1,7 @@
 import React from "react";
 import { Carousel } from "@mantine/carousel";
 import { FlexContent, GridImg } from "./css/Card";
-const data = [
-  {
-    title: "Gogle Wars",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
-    subtitle: 2019,
-  },
-  {
-    title: "Gogle Wars",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
-    subtitle: 2021,
-  },
-  {
-    title: "Gogle Wars",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
-    subtitle: 2022,
-  },
-  {
-    title: "Gogle Wars",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
-    subtitle: 2023,
-  },
-  {
-    title: "Gogle Wars",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error ",
-    subtitle: 2023,
-  },
-  {
-    title: "Gogle Wars",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
-    subtitle: 2023,
-  },
-  {
-    title: "Gogle Wars",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
-    subtitle: 2023,
-  },
-  {
-    title: "Gogle Wars",
-    parrafo: "Sed ut persepecticcion unde omns ste antus error",
-    subtitle: 2023,
-  },
-];
+import data from "./data.json"
 
 const Card = ({cardivRef}) => {
   return (
