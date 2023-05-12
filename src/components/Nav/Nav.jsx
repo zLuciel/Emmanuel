@@ -1,10 +1,10 @@
 import { Link, animateScroll as scroll } from "react-scroll";
 
 import React, { useEffect, useRef, useState } from "react";
-import { NavContainer, ListNav, StyledLink } from "./css/Nav";
+import { NavContainer, ListNav } from "./css/Nav";
 import HeaderGsap from "../Header/gsap";
 
-export const Nav = ({ tipo, hambur }) => {
+export const Nav = ({ tipo, hambur, handleVisible }) => {
   const nav = useRef(null);
   const nav1 = useRef(null);
   const nav2 = useRef(null);
@@ -25,6 +25,7 @@ export const Nav = ({ tipo, hambur }) => {
       <ListNav hambur={hambur}>
         <li ref={nav}>
           <Link
+            onClick={handleVisible}
             active={activeLink === "home"}
             onSetActive={handleSetActive}
             className={activeLink === "home" ? "active-section" : ""}
@@ -38,6 +39,7 @@ export const Nav = ({ tipo, hambur }) => {
         </li>
         <li ref={nav2}>
           <Link
+            onClick={handleVisible}
             active={activeLink === "about"}
             onSetActive={handleSetActive}
             className={activeLink === "about" ? "active-section" : ""}
@@ -49,9 +51,10 @@ export const Nav = ({ tipo, hambur }) => {
             Conoceme
           </Link>
         </li>
-        
+
         <li ref={nav1}>
           <Link
+            onClick={handleVisible}
             active={activeLink === "portfolio"}
             onSetActive={handleSetActive}
             className={activeLink === "portfolio" ? "active-section" : ""}
@@ -64,9 +67,10 @@ export const Nav = ({ tipo, hambur }) => {
             Portafolio
           </Link>
         </li>
-      
+
         <li ref={nav3}>
           <Link
+            onClick={handleVisible}
             active={activeLink === "skill"}
             onSetActive={handleSetActive}
             className={activeLink === "skill" ? "active-section" : ""}
@@ -81,6 +85,7 @@ export const Nav = ({ tipo, hambur }) => {
         </li>
         <li ref={nav4}>
           <Link
+            onClick={handleVisible}
             active={activeLink === "contact"}
             onSetActive={handleSetActive}
             className={activeLink === "contact" ? "active-section" : ""}

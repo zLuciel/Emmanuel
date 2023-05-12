@@ -7,7 +7,7 @@ export const AboutContainer = styled.section`
   display: grid;
   grid-template-columns: 1fr;
   place-content: center;
-  padding: 50px 30px 0 ;
+  padding: 50px 30px 0;
   margin-bottom: 80px;
   padding-top: 170px;
   h1 {
@@ -18,7 +18,7 @@ export const AboutContainer = styled.section`
     line-height: 77px;
     margin-bottom: 20px;
     //**responsive */
-    @media screen and (max-width: 454px){
+    @media screen and (max-width: 454px) {
       font-size: 3rem;
       line-height: 77px;
     }
@@ -28,15 +28,14 @@ export const AboutContainer = styled.section`
     padding-top: 320px;
     max-width: 900px;
   }
-  @media screen and (max-width: 579px){
-   
+  @media screen and (max-width: 579px) {
     max-width: 500px;
   }
-  @media screen and (max-width: 543px){
+  @media screen and (max-width: 543px) {
     padding-top: 530px;
     max-width: 500px;
   }
-  @media screen and (max-width: 454px){
+  @media screen and (max-width: 454px) {
     padding-top: 450px;
   }
 `;
@@ -45,19 +44,20 @@ export const CardGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
   place-content: center;
- //**responsive */
+  //**responsive */
   @media screen and (max-width: 1293px) {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     row-gap: 40px;
   }
 `;
 export const CardDetail = styled.div`
+  z-index: 4;
   span {
     display: flex;
     column-gap: 20px;
     align-items: center;
     margin-bottom: 10px;
-    .icon{
+    .icon {
       color: var(--primary-color);
       font-size: 2rem;
     }

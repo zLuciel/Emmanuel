@@ -12,14 +12,14 @@ const Hamburger = () => {
   const handle = () => {
     HandleHamburguer(setVisible, hamburger, visible);
   };
-
+  
   return (
     <>
       <HamburgerIcon>
         <GiHamburgerMenu className="icon-hamburguer" onClick={handle} />
       </HamburgerIcon>
       <ContainerHambruger ref={hamburger}>
-        <Nav tipo={visible} hambur={true} />
+        <Nav tipo={visible} hambur={true} handleVisible={handle} />
       </ContainerHambruger>
     </>
   );
