@@ -5,9 +5,6 @@ import Card from "./Card";
 import Habilidades from "./data";
 import { SkillAnimate } from "./gsap";
 
-
-
-
 const Skill = () => {
   const SkillRef = useRef(null)
   const CardRefChildre = useRef(null)
@@ -21,12 +18,12 @@ const Skill = () => {
     <SkillContainer id="skill" ref={SkillRef}>
       <Title
         descriptionRef={descriptionRef}
-        subtitle={"ourd wards"}
+        subtitle={""}
         parrafo=" Estoy familiarizado con herramientas y 
         tecnologías modernas para el desarrollo y estoy 
         comprometido a seguir aprendiendo y mejorando mis
          habilidades continuamente."
-        title={"Skill And Aptitudes"}
+        title={"Skill y Aptitudes"}
       />
       {/*<button>Skill</button>
       <button>Aptitud</button>*/}

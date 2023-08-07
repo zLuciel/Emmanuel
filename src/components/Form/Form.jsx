@@ -27,7 +27,6 @@ const Form = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log(formData);
     try {
       const response = await fetch("/api/sendEmail", {
         method: "POST",
@@ -37,7 +36,6 @@ const Form = () => {
         },
       });
       const data = await response.json();
-      console.log(data);
     } catch (error) {
       console.error("Error al enviar el correo electrónico", error);
       // Maneja cualquier error que ocurra durante el envío del correo electrónico
@@ -65,6 +63,7 @@ const Form = () => {
             <label>
               Nombre
               <input
+                required
                 autoComplete="off"
                 type="text"
                 name="name"
@@ -75,6 +74,7 @@ const Form = () => {
             <label>
               Email
               <input
+                required
                 autoComplete="off"
                 type="email"
                 name="email"
@@ -95,6 +95,7 @@ const Form = () => {
           <label>
             Mensaje
             <textarea
+              required
               name="message"
               value={formData.message}
               onChange={handleChange}

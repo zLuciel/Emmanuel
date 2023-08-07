@@ -58,10 +58,10 @@ export const PrincipalImg = styled.div`
     bottom: 20px;
     margin: 0 20px;
     background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(7.5px);
+    backdrop-filter: blur(3.5px);
     /* Note: backdrop-filter has minimal browser support */
-    padding: 5px 8px;
-    border-radius: 5px;
+    padding: 5px 15px;
+    border-radius: 10px;
   }
 `;
 

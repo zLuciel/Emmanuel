@@ -25,7 +25,7 @@ const Trabajo = () => {
           comunitaria, he adquirido habilidades para trabajar 
           en equipo y cumplir con altos estándares de calidad en 
           cada proyecto."
-          subtitle={"Our Awards"}
+          subtitle={""}
           title={"Experiencia realizadas"}
         />
       </div>

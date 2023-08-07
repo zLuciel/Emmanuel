@@ -11,6 +11,8 @@ import {
   SiFirebase,
   SiNodedotjs,
   SiFigma,
+  SiPhp,
+  SiLaravel,
 } from "react-icons/si";
 
 const Habilidades = [
@@ -83,6 +85,18 @@ const Habilidades = [
       icon: <SiFigma />,
       color: "yellow",
       info:"User Interface Design",
+    },
+    {
+      name: "PHP",
+      icon: <SiPhp />,
+      color: "#484C89",
+      info:"Hypertext Preprocessor",
+    },
+    {
+      name: "Laravel Basico",
+      icon: <SiLaravel />,
+      color: "#F05340",
+      info:"Framework web applications.",
     },
   ];
 

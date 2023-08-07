@@ -34,7 +34,7 @@ export const Nav = ({ tipo, hambur, handleVisible }) => {
             smooth={true}
             duration={300}
           >
-            Home
+            Inicio
           </Link>
         </li>
         <li ref={nav2}>

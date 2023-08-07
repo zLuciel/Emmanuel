@@ -24,24 +24,6 @@ const Card = ({cardivRef}) => {
             </FlexContent>
           ))}
         </Carousel.Slide>
-        <Carousel.Slide className="grid">
-          {data.map((card, i) => (
-            <FlexContent key={i}>
-              <h4>{card.subtitle}</h4>
-              <h1>{card.title}</h1>
-              <p>{card.parrafo}</p>
-            </FlexContent>
-          ))}
-        </Carousel.Slide>
-        <Carousel.Slide className="grid">
-          {data.map((card, i) => (
-            <FlexContent key={i}>
-              <h4>{card.subtitle}</h4>
-              <h1>{card.title}</h1>
-              <p>{card.parrafo}</p>
-            </FlexContent>
-          ))}
-        </Carousel.Slide>
       </Carousel>
     </GridImg>
   );

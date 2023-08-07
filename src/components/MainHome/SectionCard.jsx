@@ -63,7 +63,7 @@ const SectionCard = () => {
           <h4>01</h4>
           <div>
             <span>+</span>
-            <p>Global Happy Clients</p>
+            <p>Clientes Satisfecho</p>
           </div>
         </NumberSection>
         <NumberSection>
