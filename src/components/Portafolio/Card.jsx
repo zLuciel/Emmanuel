@@ -4,7 +4,7 @@ import { Carousel } from "@mantine/carousel";
 import { FlexContent, GridImg } from "./css/Card";
 import gamesapi from "@/assets/gamesapi.png";
 import rickapi from "@/assets/rickapi.png";
-import eventoweb from "@/assets/eventoweb.png";
+import eventoweb from "@/assets/eventoWeb.png";
 import Ong from "@/assets/Ong.png";
 const data = [
   {
